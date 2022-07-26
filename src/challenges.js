@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(animal1, animal2) {
-  if (animal1 === true && animal2 === true){
+  if (animal1 === true && animal2 === true) {
     return true;
   } else {
     return false;
@@ -12,10 +12,10 @@ function calcArea(base, height) {
   return area;
 }
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
-
+function splitSentence(frase) {
+  let words = frase.split(' ');
+  return words
+    }
 // Desafio 4
 function concatName() {
   // seu código aqui
