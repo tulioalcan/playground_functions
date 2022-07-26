@@ -14,25 +14,35 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(frase) {
   let words = frase.split(' ');
-  return words
+  return words;
 }
 // Desafio 4
 function concatName(names) {
   let ultimoPrimeiro = names[names.length-1].concat(', ').concat(names[0]);
-  return ultimoPrimeiro
+  return ultimoPrimeiro;
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
   let pontos = (wins * 3) + ties
-  return pontos
+  return pontos;
 }
-
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
-
+function highestCount(numeros) {
+bigNumber = -2;
+contador = 0; 
+  for (let index = 0; index < numeros.length; index += 1){
+    if (numeros[index] > bigNumber){
+      bigNumber = numeros[index];
+    }
+  }
+  for (let index2 = 0; index2 < numeros.length; index2 += 1){
+    if (numeros[index2] === bigNumber){
+      contador += 1;
+    }
+  }
+  return contador;  
+    }
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
