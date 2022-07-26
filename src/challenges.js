@@ -15,10 +15,11 @@ function calcArea(base, height) {
 function splitSentence(frase) {
   let words = frase.split(' ');
   return words
-    }
+}
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(names) {
+  let ultimoPrimeiro = names[names.length-1].concat(', ').concat(names[0]);
+  return ultimoPrimeiro
 }
 
 // Desafio 5
