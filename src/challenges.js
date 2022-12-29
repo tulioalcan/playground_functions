@@ -45,14 +45,13 @@ let contador = 0;
 }
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if((Math.abs(mouse - cat1)) < (Math.abs(mouse - cat2))){
+  if ((Math.abs(mouse - cat1)) < (Math.abs(mouse - cat2))) {
     return 'cat1';
-  } else if ((Math.abs(mouse - cat1)) === (Math.abs(mouse - cat2))){
+  } if ((Math.abs(mouse - cat1)) === (Math.abs(mouse - cat2))) {
     return 'os gatos trombam e o rato foge';
-  } else {
-    return 'cat2';
-  }
-}    
+  } return 'cat2';
+}
+
 // Desafio 8
 function fizzBuzz(num) {
   let array = []; 
@@ -70,16 +69,41 @@ function fizzBuzz(num) {
   return array
 }
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
 
+function encode(sentence) {
+  let words = sentence.replace(/[a]/g, '1')
+    .replace(/[e]/g, '2')
+    .replace(/[i]/g, '3')
+    .replace(/[o]/g, '4')
+    .replace(/[u]/g, '5');
+  return words;
+}
+function decode(sentence2) {
+  let words2 = sentence2
+    .replace(/[1]/g, 'a')
+    .replace(/[2]/g, 'e')
+    .replace(/[3]/g, 'i')
+    .replace(/[4]/g, 'o')
+    .replace(/[5]/g, 'u');
+  return words2;
+}
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array, string) {
+  let lista = [];
+  let error = 'Vazio!';
+  if (array.length === 0) {
+    return error;
+  }
+
+  array.sort();
+
+  for (let index = 0; index < array.length; index += 1) {
+    let object = {};
+    object.tech = array[index];
+    object.name = string;
+    lista.push(object);
+  }
+  return lista;
 }
 
 module.exports = {
